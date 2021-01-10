@@ -1,0 +1,51 @@
+:root {
+    --primary: #fff
+}
+
+.btn {
+    border-radius:2px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.btn--primary{
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+}
+.btn--outline{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    transition: all 0.3s ease-out ;
+}
+
+.btn--circle{
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 110%;
+    transition: all 0.3s ease-out ;
+    padding: 50px;
+}
+.btn--medium {
+    padding: 8px 20px;
+    font-size: 20px;
+}
+.btn--large {
+    padding: 12px 26px;
+    font-size: 20px;
+}
+.btn--icon-size{
+    padding: 100px;
+    width:100px;
+    height: auto;
+}
+
+.btn--medium:hover,
+.btn--large:hover{
+    background:rgb(58, 58, 58);
+    color: white;
+    transition: all 0.3s ease-out ;
+
+}

@@ -1,0 +1,14 @@
+.front-container{
+    overflow: hidden;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    object-fit: contain;
+    justify-content: center;
+}
+.front-container h1{
+    font-size: 70px;
+    
+}
