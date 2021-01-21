@@ -27,11 +27,12 @@ const Events = () => {
     else if (count > 1){
         isTrue = false;
     };
-console.log(EventsData)
+
+    console.log(EventsData)
     useEffect(() => {
-        fetch(EventsData)
+        fetch("./EventsData")
         .then((res) => res.json())
-        .then((data) => setItems(data));
+        .then((data) => console.log(data));
     },[])
 
 
