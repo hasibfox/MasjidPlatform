@@ -1,14 +1,26 @@
 .front-container{
-    overflow: hidden;
-    height: 90vh;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    object-fit: contain;
-    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    background: cornflowerblue;
 }
 .front-container h1{
     font-size: 70px;
-    
+}
+img{
+    width: 100%;
+    height: auto;
+}
+
+@keyframes backgroundTransition {
+    0%{
+        background-image: url("https://images.pexels.com/photos/1537086/pexels-photo-1537086.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    }
+    50%{
+        background-image: url("https://images.pexels.com/photos/161276/moscow-cathedral-mosque-prospekt-mira-ramadan-sky-161276.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    }
+    100%{
+        background-image: url("https://images.pexels.com/photos/1537086/pexels-photo-1537086.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+ 
+    }
 }

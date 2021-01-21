@@ -28,7 +28,7 @@ return (
     <nav className='navbar'>
         <div className='navbar-container'>
             <div className="logo-container">
-            <Link to="/" className="navbar-logo"> <img src="https://i.ibb.co/CHdX9z1/pic.png"></img></Link>  
+            <Link to="/" className="navbar-logo"> <img src="https://masjidalmadinah.org/wp-content/uploads/2018/04/cropped-MaM-Logo.png"></img></Link>  
             </div>
             <div className="link-container">
             <div className="menu-icon" onClick={handleClick}>
@@ -66,17 +66,24 @@ return (
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link to='/sign-up' className='nav-links' onClick={closeMobileMenu} >
+                        <Link to='/dashboard' className='nav-links' onClick={closeMobileMenu} >
                         Sign In
                         </Link>
                     </li>
                     
 
                 </ul>
+
                 <div className='sign'>
-                {button && <Button buttonStyle='btn--outline'>SIGN IN</Button>}
-                {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
+                    <Link to="/dashboard">
+                        <Button buttonStyle='btn--outline'>Sign In</Button>
+                    </Link>
+
+                    <Link to="/sign-up">
+                        <Button buttonStyle='btn--outline'>Sign Up</Button>
+                    </Link>
                 </div>
+                
                 
                 
                 </div>

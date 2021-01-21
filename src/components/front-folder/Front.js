@@ -7,13 +7,7 @@ function Front() {
     
     return (
       <div className="front-container">
-          <h3>Masjid Short Label</h3>
-          <h1> Masjid Name</h1>
-          <h3> Masjid short description: It is a long established fact that a reader will be distracted by the readable content 
-            of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
-         of letters, as opposed to using 'Content here, content here', making it look like readable English.</h3>
-         <iframe className="poop" scrolling="no" src="https://www.islamicfinder.org/prayer-widget/"> </iframe>
-         
+        <img src="https://images.pexels.com/photos/1537086/pexels-photo-1537086.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"></img>
       </div>
     );
   }

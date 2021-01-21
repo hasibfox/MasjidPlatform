@@ -1,0 +1,9 @@
+.modal-drop{
+    background:lightgrey;
+    height:140vh;
+    position: absolute;
+    width: 100%;
+    transition: all 1.3s;
+    opacity: .5;
+    z-index: 1000;
+}

@@ -1,0 +1,91 @@
+.sign-container{
+  /* The image used 
+    background: radial-gradient(#20B2AA, #00FFCD);
+
+  background: radial-gradient(#20B2AA, #00FFCD);
+  /* Full height */
+  background-image: url("https://images.pexels.com/photos/2159549/pexels-photo-2159549.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  height: 100vh; 
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  position: fixed;
+
+}
+.dark-overlay{
+    height: 100vh;
+    background:black;
+    opacity: .8;
+    width: 100%;
+    position: absolute;
+}
+
+.signup-box{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-top: 100px;
+  height: 600px;
+  width: 400px;
+  max-width: 80%;
+  overflow-wrap: break-word;
+  background: white;
+  z-index: 1;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+h2 .box-title{
+padding: 10px;
+font-size: 30px;
+}
+input{
+  border-radius: 5px;
+  width: 90%;
+  padding: 5px;
+  margin: 10px;
+  border-color: lawngreen;
+  transition: ease-in-out;
+}
+
+.already-registered-button{
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  background: transparent;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 5px;
+  margin-left: -20px;
+}
+.sign-logo{
+  z-index: 2;
+  position: absolute;
+  height: 65px;
+  width: auto;
+  margin-left: 20px;
+
+}
+.sign-up-btn{
+  margin-top: 10px;
+  margin-left: 5px;
+}
+h3{
+  font-size: 15px;
+  text-align: left;
+  margin-left: 20px;
+}
+p .policy{
+  font-size: 15px;
+  text-align: center;
+}
+form h3{
+  cursor: pointer;
+}

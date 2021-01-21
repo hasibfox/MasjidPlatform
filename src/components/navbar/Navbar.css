@@ -1,12 +1,10 @@
 
 .navbar {
   width: 100%;
-  display: block;
   font-size: 1.2rem;
   z-index: 999;
-  height:90px;
   border-bottom: black 1px solid;
-
+  box-shadow: 0 4px 2px -2px gray;
 }
 .below{
   display: flex;
@@ -17,28 +15,24 @@
   width: 100%;
   display: flex;
   align-items: center;
-
-}
-.logo-container{
-  width: 125px;
-  margin-left: 20px;
-  text-align: center;
-  justify-content: center;
-
 }
 .link-container{
   display: flex;
   width: 100%;
+  margin-top: -10px;
 }
 .navbar-logo img{
   cursor: pointer;
   text-decoration: none;
-  height: 80px;
+  max-height: 55px;
+  width: auto;
+  margin-top: -10px;
+  margin-left: 10px;
+  transition: all .5s ease-in-out;
 }
 .fa-mosque{
   color: #00539CFF;
 }
-
 .nav-menu {
   display: flex;
   width: 80%;
@@ -51,32 +45,28 @@
   display: flex;
   width: 300px;
 }
-
 .nav-links {
   display: flex;
   align-items: center;
   text-decoration: none;
-  padding-bottom: .7rem;
   height: 100%;
 }
-
 .nav-links:hover {
   border-bottom: 4px solid black;
   text-decoration: none;
   transition: all 0.2s ease-out;
 }
-
 .fa-bars {
   color: #00539CFF;
+  transition: all .5s ease-out;
 }
 .fa-times{
   color: #00539CFF;
-
+  transition: all 0.5s ease-out;
 }
 .nav-links-mobile {
   display: none;
 }
-
 .menu-icon {
   display: none;
 }
@@ -93,10 +83,9 @@ ul :nth-child(6), ul :nth-child(7){
   ul :nth-child(6), ul :nth-child(7){
     display: block; 
    }
-  .navbar{
-    height: 70px;
-  }
-
+.sign{
+  display: none;
+}
   .nav-menu {
     display: flex;
     height: fit-content;
@@ -110,9 +99,7 @@ ul :nth-child(6), ul :nth-child(7){
     transition: all 1s ease;
     margin-left: 20%;
     background: black;
-
   }
-
   .nav-menu.active {
     top: -30px;
     height: 600px;
@@ -139,24 +126,28 @@ ul :nth-child(6), ul :nth-child(7){
   }
 
   .navbar-logo img {
-    height: 70px;
-    margin-top: -25px;
-    margin-left: -40px;
+    width: auto;
+    margin-top: -10px;
+    transition: all 1s ease-in-out;
   }
 
   .menu-icon {
     display: block;
     position: absolute;
     right: 0;
-    transform: translate(-200%, -50%);
+    transform: translate(-200%, -45%);
     font-size: 1.8rem;
     cursor: pointer;
+
   }
 
   .fa-times {
     color: red;
-    height: 20px;
     font-size: 2rem;
+    margin-right: 3px;
+  }
+  .fa-bars{
+    margin-left: 2px;
   }
 }
 
@@ -180,3 +171,5 @@ ul :nth-child(6), ul :nth-child(7){
     color: #242424;
     transition: 250ms;
   } */
+
+
