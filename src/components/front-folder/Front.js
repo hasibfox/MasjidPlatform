@@ -7,7 +7,17 @@ function Front() {
     
     return (
       <div className="front-container">
-        <img src="https://images.pexels.com/photos/1537086/pexels-photo-1537086.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"></img>
+        <div className="front-left">
+          <h1>Asalamu Alaikum Wa Rahmatullahi Wa Barakatuh</h1>
+          <h2>Welcome to Masjid Al-Aqsa</h2>
+          <p>Masjid Al Madinah is a cooperative effort of the Muslim Community in Upper Darby.
+The Masjid was incorporated in 1999 to provide a place of Islamic activities for the growing Muslim Community in Delaware County.</p>
+        </div>
+        <div className="front-right">
+          <h1>Prayer Times</h1>
+         <iframe className="prayer-table" src="https://www.islamicfinder.org/prayer-widget/"></iframe>
+        </div>
+
       </div>
     );
   }

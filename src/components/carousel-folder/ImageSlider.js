@@ -61,12 +61,14 @@ const ImageSlider = ( {slides}) => {
                     >
                     </img>
                     <div className="SliderButtons">
-            <IoArrowBack onClick={prevSlide} className="PrevArrow"></IoArrowBack>
-            <IoArrowForward onClick={nextSlide} className="NextArrow"></IoArrowForward>
+              <div className="arrow-wrapper">
+                <IoArrowBack onClick={prevSlide} className="PrevArrow"></IoArrowBack>
+                <IoArrowForward onClick={nextSlide} className="NextArrow"></IoArrowForward>
+              </div>
+            
           </div>
                 </div>
-                )}
-                
+                )}          
               </div>
             )
           })}

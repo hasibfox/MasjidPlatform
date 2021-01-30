@@ -22,13 +22,12 @@ function Signin() {
                         marginBottom:'50px',
                     }}>Log in with your existing account</h2>
                     <input type="email" id="email" placeholder="Email"></input>
-                    <h3>Forgot Username?</h3>
+                    <h3 className="forgot">Forgot Username?</h3>
                     <input type="text" id="pswrd" placeholder="Password"></input>
-                    <h3>Forgot Password?</h3>
+                    <h3 className="forgot">Forgot Password?</h3>
                     <div className="sign-up-btn">
                         <Button buttonStyle="btn--primary">Log In!</Button>
                     </div>
-                    <p> By signing up, you agree to our Terms , Data Policy and Cookies Policy .</p>
 
                 </form>
             </div>

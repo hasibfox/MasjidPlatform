@@ -6,7 +6,7 @@ import { Button } from '../buttons-folder/Button';
 function Navbar() {
     const [click, setClick] = useState(false);
     const [button,setButton] = useState(true)
-
+    const user = "UDICPAFH";
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
 
@@ -21,7 +21,7 @@ function Navbar() {
         showButton();
       }, []);
     window.addEventListener('resize', showButton);
-
+    
 
 return (
     <>
@@ -74,17 +74,28 @@ return (
 
                 </ul>
 
-                <div className='sign'>
-                    <Link to="/dashboard">
+                <div className='profile-dropdown'>
+                    <Link >
+                        <Button buttonStyle='btn--primary'>{user} 
+                        <i class="fa fa-caret-down"></i>
+                        </Button>
+                    </Link>
+                    <div class="dropdown-content">
+                        <a href="#">Edit Webpage</a>
+                        <a href="#">Account Settings</a>
+                        <a href="#">Frequently Asked Questions</a>
+                        <a href="#">Sign Out</a>
+
+                    </div>
+                </div>
+                
+                {/* <Link to="/dashboard">
                         <Button buttonStyle='btn--outline'>Sign In</Button>
                     </Link>
 
                     <Link to="/sign-up">
                         <Button buttonStyle='btn--outline'>Sign Up</Button>
-                    </Link>
-                </div>
-                
-                
+                    </Link> */}
                 
                 </div>
                 </div>

@@ -1,17 +1,40 @@
 .front-container{
+    display: grid;
     width: 100%;
-    height: 100vh;
-    text-align: center;
-    background: cornflowerblue;
-}
-.front-container h1{
-    font-size: 70px;
-}
-img{
-    width: 100%;
-    height: auto;
+    height: 80vh;
+    grid-template-columns: 2fr 1fr;
+    background-color: royalblue;
+    overflow: hidden;
 }
 
+.front-left,.front-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.prayer-table{
+    max-width: 300px;
+    height: 358px;
+    border: 1px solid #ddd;
+}
+.front-left{
+    animation: slideRight 1s ease-in-out;
+    background: lawngreen;
+}
+
+.front-left h2, .front-left p,.front-left h1{
+    margin-left: 85px;
+    margin-bottom: 20px;
+    margin-right: 200px;
+}
+.front-right{
+    align-items: center;
+    background: khaki;
+}
+.front-right h1{
+    margin-bottom: 10px;
+}
+ /*
 @keyframes backgroundTransition {
     0%{
         background-image: url("https://images.pexels.com/photos/1537086/pexels-photo-1537086.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
@@ -22,5 +45,13 @@ img{
     100%{
         background-image: url("https://images.pexels.com/photos/1537086/pexels-photo-1537086.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
  
+    }
+} */
+@keyframes slideRight {
+    from {
+        margin-left: -50px;
+    }
+    to {
+        margin-left: 0px;
     }
 }

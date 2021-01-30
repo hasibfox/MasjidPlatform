@@ -1,0 +1,181 @@
+.modal-wrapper{
+    position: absolute;
+    background: white;
+    width: 100vw;
+    max-width: 80vw;
+    margin-top: 20vh;
+    margin-left: 10vw;
+    transition: all .8s ease-in-out;
+    z-index: 2000; 
+    overflow: hidden;
+}
+
+.modal-header{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.modal-header p{
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+}
+.btn-cm{
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-top: -20px;
+}
+.modal-content{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    
+}
+.modal-body{
+    width: 200px;
+    margin-left: 40px;
+    padding-bottom: 50px;
+    border-right: .5px black solid;
+}
+.modal-body:last-child{
+    border-right: none;
+
+}
+.modal-body h4, .modal-body2 h4{
+    font-size: 1.8rem;
+}
+.modal-body p,.modal-body2 p{
+    font-size: 1rem;
+    color: black;
+    margin-top: 1rem;
+}
+.modal-footer{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.current-image{
+    height: 50px;
+    width: auto;
+    margin-top: 5px;
+}
+/* Modal 2 Adjustments */
+
+.modal-content2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-top: 50px;
+    background: whitesmoke;  
+    padding-left: 20px;
+}
+.modal-body2 textarea{
+    resize: none;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 90%;
+}
+.modal-body2 h4{
+    padding-bottom: 10px;
+}
+.intro-message{
+    height: 5vh;
+}
+.desc-message{
+    height: 20vh;
+}
+
+/* Modal 3 Adjustments */
+
+.modal-content3{
+    padding-top: 30px;
+    
+}
+.events-grid{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr .3fr .3fr .5fr;
+    height: 350px;
+}
+
+.events-image{
+    width: auto;
+    grid-row: 1/6;
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+}
+.events-image img{
+    height: 80%;
+    width: 220px;
+    margin-top: -.5px;
+    
+}
+.events-image h3{
+    margin-bottom: 20px;
+}
+.title-box{
+    grid-row: 1/2;
+    grid-column: 0/1;
+}
+.title-box h3, .description-box h3, .time-flex2 h3,.time-flex1 h3, .img-upload h3{
+    text-align: center;
+    width: 100%;
+
+}
+.description-box{
+    grid-row: 2/3;
+    grid-column: 0/1;
+
+}
+.time-flex1,.time-flex2,.title-box,.description-box, .img-upload{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    justify-content:start ;
+    align-items: center;
+}
+
+
+.time-flex1{
+    grid-row: 3/4;
+    grid-column: 0/1;
+}
+.time-flex2{
+    grid-row: 4/5;
+    grid-column: 0/1;
+}
+.img-upload{
+    grid-row: 5/6;
+    grid-column: 0/1;
+}
+.time-inp{
+    width: 100px;
+}
+
+.modal-body3 textarea{
+    resize: none;
+    overflow-x: hidden;
+    padding-top: 3px;
+
+}
+.modal-body3 h4{
+    padding-bottom: 10px;
+}
+.modal-body3{
+    border: 2px black solid;
+}
+
+.description-box textarea{
+    height: 80%;
+}
+.title-box textarea{
+    height: 40%;
+}

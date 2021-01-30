@@ -39,18 +39,56 @@
   list-style: none;
   justify-content: space-evenly;
 }
-.sign{
-  float: right;
-  justify-content: center;
+.profile-dropdown{
+  width: 200px;
+  justify-content: left;
   display: flex;
-  width: 300px;
+  font-size: 16px;
+  padding-bottom: 5px;
+  border: none;
+  outline: none;
+  color: white;
+  margin-top: 5px; /* Important for vertical align on mobile phones */
+  margin-left: 30px;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-top: 45px;
+}
+.fa-caret-down{
+  margin-left: 10px;
+}
+.profile-dropdown:hover .dropdown-content {
+  display: block;
+  z-index: 100000;
+}
+Button:focus .dropdown-content{
+  background: #30ca72;
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: red;
 }
 .nav-links {
   display: flex;
   align-items: center;
   text-decoration: none;
   height: 100%;
+  color: black;
 }
+
 .nav-links:hover {
   border-bottom: 4px solid black;
   text-decoration: none;
@@ -70,7 +108,7 @@
 .menu-icon {
   display: none;
 }
-.nav-links:visited,.nav-link{
+.nav-links:visited{
 color: black;
 }
 ul :nth-child(6), ul :nth-child(7){
@@ -83,7 +121,7 @@ ul :nth-child(6), ul :nth-child(7){
   ul :nth-child(6), ul :nth-child(7){
     display: block; 
    }
-.sign{
+.profile-dropdown{
   display: none;
 }
   .nav-menu {
@@ -108,7 +146,7 @@ ul :nth-child(6), ul :nth-child(7){
     left: -20%;
     opacity: 1;
     transition: all 0.5s ease;
-    z-index: 1;
+    z-index:100000;
   }
   .nav-item {
     height: 80px;
@@ -142,7 +180,6 @@ ul :nth-child(6), ul :nth-child(7){
   }
 
   .fa-times {
-    color: red;
     font-size: 2rem;
     margin-right: 3px;
   }

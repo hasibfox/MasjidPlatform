@@ -16,7 +16,7 @@ function Signup() {
         <div className="sign-container">
             <div className="signup-box">
                 <h2 className="box-title">Create a website for your Masjid Today!</h2>
-                <form>
+                <form className="sign-form">
                     <input type="text" id="fname" name="fname" placeholder="First Name"></input>
                     <input type="text" id="lname" name="lname" placeholder="Last Name"></input>
                     <input type="text" id="orgname" name="orgname" placeholder="Organization Name"></input>

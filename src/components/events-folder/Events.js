@@ -1,13 +1,13 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import './Events.css';
 import {Button} from '../buttons-folder/Button';
 import EventsData from './EventsData.json';
 
 var count = 1
 var isTrue = true;
+
 const Events = () => {
 
-    const [items,setItems] = useState([]);
     const [visible,setVisible] = useState(3);
     const showMoreItems = () => {
         setVisible((prevValue) => prevValue +3);
@@ -28,31 +28,44 @@ const Events = () => {
         isTrue = false;
     };
 
-    console.log(EventsData)
-    useEffect(() => {
-        fetch("./EventsData")
-        .then((res) => res.json())
-        .then((data) => console.log(data));
-    },[])
 
 
     return (
-        <>
+        <div className="events-body-container">
+            <h1>Events and Announcements!</h1><br/>
             <div className="events-container">
-                {items.slice(0,visible).map(items => (
-                    <div className="card">
-                        <div className="id">
-                            <span>{items.id}</span>
+                {EventsData.slice(0,visible).map(EventsData => (
+                    <div className="event-card">            
+                        <h2> {EventsData.title}</h2>
+                        <div className="events-content">
+                            <div>
+                                <img src={EventsData.image}></img>
+                                <div className="dateNtime">
+                                    <div className="together">
+                                        <i class="fas fa-calendar-alt"></i>
+                                        <p>{EventsData.date}</p>
+                                    </div>
+                                    <div className="together">
+                                        <i class="far fa-clock"></i>
+                                        <p>{EventsData.time}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        <h3>{EventsData.description}</h3>
+
                         </div>
-                        <p> {items.body}</p>
+                        
+                        
                     </div>
                 ))}
-                <Button onClick={showMoreItems}>Load More</Button>
-                <Button onClick={isTrue ? StayAtItems : showLessItems}>Load Less</Button>
 
             </div>
+            <div className="events-buttons">
+                <Button onClick={showMoreItems}>Load More</Button>
+                <Button onClick={isTrue ? StayAtItems : showLessItems}>Load Less</Button>
+            </div>
             
-        </>
+        </div>
     )
 
 }
