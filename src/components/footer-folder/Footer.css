@@ -17,48 +17,48 @@
 
   .contact-us{
     height: 100%;
-    width: 100%;
+    width: 90%;
     grid-area: contact-us;
     
   }
-  .contact-us h4, .references h4{
-    margin-left: 20px;
+  .contact-us h4, .references h4,.mailing-list input{
     margin-top: 8px;
+    word-wrap: break-word;
+
   }
   .contact-us h3,.references h3, .follow-us h3,.mailing-list h3{
       font-weight: bold;
       font-size: 25px;
-      margin-top: 15px;
+      margin-bottom: 10px;
+      
   }
+  .contact-us,.references, .follow-us,.mailing-list{
+    padding: 20px;
+}
   .mailing-list{
-      width: 100%;
       height: 100%;
       grid-area: mailing-list;
       border-left: gray 1px solid;
-  }
-  .mailing-list-form input, .button button{
-      padding: 10px;
-      width: 80%;
-      text-align: left;
-      border-radius: 5px;
-      margin-left: -5px;
+      word-wrap: break-word;
   }
   .mailing-list-form input{
-      margin-left: -2px;
-  }
-  .button button{
-      margin-top: 2px;
-      background: black;
-      color: white;
-      text-align: center;
-
-  }
+      padding: 10px;
+      text-align: left;
+      border-radius: 5px;
+      width: 21vw;
+    }
   .mailing-list-form{
-      margin-left: 20px;
+      width: 100%;
+      
   }
-  label{
-      margin-right: 5px;
+ 
+  .button{
+      width: 100%;
+      margin-top: 2px;
+      text-align: center;
   }
+
+
   .footer-logo{
       grid-area: footer-logo;
       justify-self: center;
@@ -85,14 +85,18 @@
 
 .follow-us-icons{
     display: flex;
-    margin-left: 10px;
 }
-.fa-facebook-square,.fa-twitter-square,.fa-instagram-square,.fa-youtube-square,.fa-arrow-up{
+.fa-twitter-square,.fa-instagram-square,.fa-youtube-square,.fa-arrow-up{
     font-size: 30px;
     padding: 10px;
 }
 .fa-facebook-square{
     color: #3b5998;
+    font-size: 30px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+
 }
 .fa-twitter-square{
     color: #1DA1F2;
@@ -104,10 +108,10 @@
 .arrow-up{
     padding: 5px;
     border-radius: 50%;
-    margin-right: 10px;
+    margin-right: 3vw;
     align-self: flex-end;
     border: gray 1px solid;
-    margin-top: 50px;
+    margin-top: 25px;
     cursor: pointer;
     transition: all .2s ease-in-out;
     background: black;
@@ -149,7 +153,7 @@
     }
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 860px){
     .footer-container{
         height: 100%;
         grid-template-columns: 1fr;
@@ -165,18 +169,41 @@
     .footer-logo{
         margin-top: -100px;
     }
-    .contact-us h3,.follow-us h3,.mailing-list h3, .references h3{
+    .contact-us,.follow-us,.mailing-list, .references h3{
         text-align: center;
         justify-self: center;
     }
-    .follow-us-icons,.mailing-list-form{
+    .contact-us,.references, .follow-us,.mailing-list{
+        padding: 10px;
+    }
+    .follow-us-icons{
         align-items: center;
         justify-content: center;
         margin-left: 0%;
         text-align: center;
-
     }
 
+    .mailing-list-form{
+        width: 100%; 
+        background: #1DA1F2;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .mailing-list-form input{
+        width: 80vw;
+    }
+    .button{
+        width: 85vw;
+    
+    }
+    .mailing-list{
+        width: 100%;
+         
+    }
     .references,.mailing-list,.follow-us{
         border-left: none;
     }
@@ -184,9 +211,7 @@
     .contact-us h4{
         text-align: left;
     }
-    .button{
-        margin-left: -11px;
-    }
+
     
 }
 @media only screen and (max-width: 333px){
@@ -194,4 +219,3 @@
         margin-left: -50px;
     }
 }
-

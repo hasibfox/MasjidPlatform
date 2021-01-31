@@ -6,7 +6,7 @@ import { Button } from '../buttons-folder/Button';
 function Front() {
     
     return (
-      <div className="front-container">
+      <div className="front-container" id="about-us">
         <div className="front-left">
           <h1>Asalamu Alaikum Wa Rahmatullahi Wa Barakatuh</h1>
           <h2>Welcome to Masjid Al-Aqsa</h2>

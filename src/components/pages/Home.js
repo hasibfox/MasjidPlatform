@@ -48,20 +48,29 @@ function Home() {
             <Modal1 slides={SliderData} show={show} close={closeModalHandler}/>
             <ImageSlider slides={SliderData} /> 
 
-            <div className="test-button">
+            <div 
+            className="test-button">
                 <Button buttonStyle="btn--edit" onClick={() => setShow2(true)}><i class="far fa-edit"></i>Edit Introduction Section</Button>
             </div>
             <Modal2 data={FrontData} show={show2} close={closeModalHandler2}/>
-            <Front/>
+            <Front/> <br/>
 
-            <div className="test-button">
-                <Button buttonStyle="btn--edit" onClick={() => setShow3(true)}><i class="far fa-edit"> Edit Events Section</i></Button>
+            <div
+            style={{
+                marginTop: '-6vh'
+            }}
+            className="test-button">
+                <Button buttonStyle="btn--edit" onClick={() => setShow3(true)}><i class="far fa-edit"></i> Edit Events Section</Button>
             </div>
             <Modal3 slides={FrontData} show={show3} close={closeModalHandler3}/>
             <Events />
 
-            <div className="test-button">
-                <Button buttonStyle="btn--edit" onClick={() => setShow4(true)}><i class="far fa-edit"></i></Button>
+            <div 
+            style={{
+                marginTop: '-2vh'
+            }}
+            className="test-button">
+                <Button buttonStyle="btn--edit" onClick={() => setShow4(true)}><i class="far fa-edit"> Edit Playlist Section</i></Button>
             </div>
             <Modal4 slides = {SliderData} show={show4} close={closeModalHandler4}/>
             <Playlist/> 

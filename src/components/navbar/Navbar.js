@@ -1,7 +1,8 @@
 import React, {useState, useEffect} from 'react'
-import { Link } from 'react-router-dom'
 import './Navbar.css';
 import { Button } from '../buttons-folder/Button';
+import { Link, animateScroll as scroll } from "react-scroll";
+
 
 function Navbar() {
     const [click, setClick] = useState(false);
@@ -21,7 +22,6 @@ function Navbar() {
         showButton();
       }, []);
     window.addEventListener('resize', showButton);
-    
 
 return (
     <>
@@ -36,14 +36,30 @@ return (
             </div>
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                     <li className="nav-item">
-                        <Link to ="/" className="nav-links" onClick={closeMobileMenu}>
-                            About Us
-                        </Link>
+                        <Link
+                            className="nav-links" 
+                            onClick={closeMobileMenu}
+                            activeClass="active"
+                            to="about-us"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={700}
+                        > 
+                        About Us </Link>
                     </li>
                     <li className="nav-item">
-                        <Link to ="/prayertimes" className="nav-links" onClick={closeMobileMenu}>
-                            Prayer Times
-                        </Link>
+                        <Link
+                            className="nav-links" 
+                            onClick={closeMobileMenu}
+                            activeClass="active"
+                            to="about-us"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={700}
+                        > 
+                        Prayer Times </Link>
                     </li>
                     <li className="nav-item">
                         <Link to ="/services" className="nav-links" onClick={closeMobileMenu}>
@@ -51,14 +67,30 @@ return (
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link to ="/events" className="nav-links" onClick={closeMobileMenu}>
-                            Events
-                        </Link>
+                        <Link
+                            className="nav-links" 
+                            onClick={closeMobileMenu}
+                            activeClass="active"
+                            to="events"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={800}
+                        > 
+                        Events </Link>
                     </li>
                     <li className="nav-item">
-                        <Link to ="/donate" className="nav-links" onClick={closeMobileMenu}>
-                            Donate
-                        </Link>
+                        <Link
+                            className="nav-links" 
+                            onClick={closeMobileMenu}
+                            activeClass="active"
+                            to="playlists"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={1000}
+                        > 
+                        Donate </Link>
                     </li>
                     <li className="nav-item">
                         <Link to='/sign-up' className='nav-links' onClick={closeMobileMenu} >

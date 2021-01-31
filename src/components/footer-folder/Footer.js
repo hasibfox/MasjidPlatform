@@ -1,7 +1,15 @@
 import React from 'react';
 import './Footer.css';
 import {Button} from '../buttons-folder/Button';
+import {animateScroll as scroll } from "react-scroll";
+import { scrollToTop } from 'react-scroll/modules/mixins/animate-scroll';
+
 const Footer = () => {
+
+    const scrollToTop = () => {
+        scroll.scrollToTop();
+    };
+
     return (
         <div>
             <div class="footer-container">
@@ -19,13 +27,14 @@ const Footer = () => {
             <div class="follow-us-text">
                 <h3>Mailing List</h3>
            </div>
-             <form className="mailing-list-form">
-                <label htmlFor="email">Enter your e-mail to receive our digital newsletter.</label><br></br>
-                <input type="text" id="lname" name="lname" placeholder="E-mail Address"></input>
-                <div class="button">
-                    <Button> Submit!</Button>
-                </div>
-            </form>
+                <form className="mailing-list-form">
+                    <label htmlFor="email">Enter your e-mail to receive our digital newsletter.</label><br></br>
+                    <input type="text" id="lname" name="lname" placeholder="E-mail Address"></input>
+                    <div className="button">
+                        <Button buttonStyle="btn--full"> Submit!</Button>
+                    </div>
+                </form>
+             
          </div>
      </div>
      <div class="follow-us">
@@ -44,7 +53,7 @@ const Footer = () => {
         <h3>Quick References</h3>
         <h4>Donate</h4>
         <h4>Salah Times</h4>
-            <div class="arrow-up">
+            <div class="arrow-up" onClick={scrollToTop}>
         <i class="fas fa-arrow-up"></i>
     </div>
     </div>

@@ -1,10 +1,11 @@
 .carousel-container{
-    height: 70vh;
+    height: 80vh;
     width: auto;
     max-height: 1100px;
     position: relative;
     overflow: hidden;
     margin-top: 50px;
+    transition: 1s;
 }
 .carousel-wrapper{
     width: 100%;
@@ -13,7 +14,6 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    margin-top: 5vh;
     margin-right: 10vw;
     overflow: hidden;
 }
@@ -23,14 +23,14 @@
 }
 .HeroImage{
     width: 90vw;
-    height: 60vh;
+    height: 75vh;
     object-fit:cover;
 
 }
 
 .PrevArrow,.NextArrow{
     width: 50px;
-    height: 57.8vh;
+    height: 73vh;
     color:black;
     cursor: pointer;
     background: whitesmoke;
@@ -47,11 +47,24 @@
 .NextArrow{
 }
 .arrow-wrapper{
-    margin-top: -61vh;
+    margin-top: -76vh;
     position: absolute;
     display: flex;
     width: 90vw;
     height: 60.3vh;
     z-index: 10000;
     justify-content: space-between;
+}
+@media screen and (max-width:786px){
+    .carousel-container{
+        height: 50vh;
+        padding-bottom: 2vh;
+        transition: .6s;
+    }
+    .HeroImage{
+        width: 90vw;
+        height: 50vh;
+        object-fit:cover;
+    
+    }   
 }

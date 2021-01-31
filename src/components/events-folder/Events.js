@@ -31,7 +31,7 @@ const Events = () => {
 
 
     return (
-        <div className="events-body-container">
+        <div className="events-body-container" id="events">
             <h1>Events and Announcements!</h1><br/>
             <div className="events-container">
                 {EventsData.slice(0,visible).map(EventsData => (

@@ -1,5 +1,6 @@
 .events-body-container{
     width: 100%;
+    padding-bottom: 10vh;
 }
 .events-body-container h1{
     text-align: center;
@@ -16,8 +17,8 @@
     max-width: 400px;
     padding: 20px;
     height: 400px;
-    background: blue;
-    color: white;
+    background: whitesmoke;
+    color: black;
     margin:10px 0;
     position: relative;
     border-radius: 5px;

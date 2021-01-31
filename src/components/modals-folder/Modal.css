@@ -63,6 +63,27 @@
     width: auto;
     margin-top: 5px;
 }
+ 
+@media screen and (max-width: 500px) {
+    .modal-body{
+        border-right: none;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        }
+    .modal-form input{
+        text-align: center;
+        margin-left: 20vw;
+    }
+    .modal-body h4, .modal-body p,.modal-body img{
+        margin-left: -10vw;
+
+    }
+}
+
 /* Modal 2 Adjustments */
 
 .modal-content2{
@@ -95,6 +116,7 @@
     padding-top: 30px;
     
 }
+
 .events-grid{
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -164,7 +186,6 @@
     resize: none;
     overflow-x: hidden;
     padding-top: 3px;
-
 }
 .modal-body3 h4{
     padding-bottom: 10px;
@@ -178,4 +199,38 @@
 }
 .title-box textarea{
     height: 40%;
+}
+@media screen and (max-width: 800px){
+    .events-grid{
+        grid-template-columns: 4fr 1fr;
+        background: chocolate;
+
+    }
+    .time-flex1,.time-flex2,.title-box,.description-box, .img-upload{
+        grid-template-columns: 40% 50%;
+
+    }
+    .events-image img{
+        height: 80%;
+        width: 120px;
+        margin-top: -.5px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .events-grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: .3fr .3fr .2fr .2fr .2fr .5fr;
+        height: 100%;
+        font-size: 10px;
+
+    }
+    .events-image{
+        grid-row: 6/7;
+        grid-column: 1;
+
+    }
+    .modal-content3{
+        padding-top: 0px;
+    }
 }

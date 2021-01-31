@@ -10,15 +10,18 @@
     padding: 8px 20px;
     background-color: black;
     color: white;
+    transition: all 0.3s ease-out ;
+
 }
 .btn--primary{
     margin-left: 5px;
     font-size: 20px;
 }
-.btn--outline{
-    border: 1px solid white;
-    transition: all 0.3s ease-out ;
+
+.btn--full{
     width: 100%;
+    padding: 10px;
+
 }
 .btn--edit{
     position: absolute;

@@ -1,19 +1,24 @@
 .playlist-card{
     width: 300px;
     height: 200px;
-    color: white;
+    color: black;
     font-size: 30px;
     margin: 0 20px;
     cursor: pointer;
-    background: blueviolet;
+    background: whitesmoke;
 }
 .playlist-container{
-padding: 30px;
+    padding-right: 20px;
+    padding-bottom: 10vh;
+    padding-left: 20px;
+    padding-top: 10vh;
+}   
+.playlist-header{
+    width: 100%;
+    text-align: center;
 }
-
 .rec .rec-dot {
     display: none;
-
 }
 /* For text and whatnot  increase card height and then create seperate divs that get styled invdividually*/
 .playlist-card-img{
@@ -35,4 +40,11 @@ padding: 30px;
 .playlist-card-img img{
     width: 100%;
     height: 100%;
+}
+
+@media screen and (max-width:786px){
+    
+    .playlist-header{
+        margin-top: 30px;
+    }
 }
