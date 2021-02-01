@@ -1,0 +1,32 @@
+.services-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.services-container h1{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+.services-content{
+height: 200px;
+max-width: 320px;
+min-width: 100px;
+padding: 30px;
+margin: 20px;
+overflow-wrap: break-word;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+transition: all 1s ease-in-out;
+}
+.fa-chalkboard-teacher{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+.services-content p{
+    margin-top: 10px;
+}

@@ -16,8 +16,8 @@
 .event-card{
     max-width: 400px;
     padding: 20px;
-    height: 400px;
     background: whitesmoke;
+    min-height: 350px;
     color: black;
     margin:10px 0;
     position: relative;
@@ -32,22 +32,37 @@
     font-size: 30px;
 }
 .events-container h3{
-    font-size: 18px;
+    font-size: 17px;
+    padding-left: 20px;
+    overflow-wrap: break-word;
+    height: fit-content;
+    max-width: 160px;
+
 }
 .event-card img{
-    height:300px;
-    max-width: 225px;
-    border-radius: 10px;
+    height:230px;
+    width: 225px;
+    border-radius: 5px;
 }
 .events-content{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .8fr .2fr;
+
 }
 .dateNtime{
     display: flex;
     justify-content:space-between;
-    width: 100%;
-    margin-top: 20px;
     font-size: 20px;
+    width: 60%;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.descimg{
+    display: flex;
+    padding: 10px;
+    overflow-wrap: break-word;
+
 }
 .fa-calendar-alt,.fa-clock{
     font-size: 20px;

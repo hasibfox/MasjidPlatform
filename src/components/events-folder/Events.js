@@ -38,8 +38,10 @@ const Events = () => {
                     <div className="event-card">            
                         <h2> {EventsData.title}</h2>
                         <div className="events-content">
-                            <div>
-                                <img src={EventsData.image}></img>
+                            <div className="descimg">
+                                <img src={EventsData.image} />
+                                <h3>{EventsData.description}</h3>
+                            </div>
                                 <div className="dateNtime">
                                     <div className="together">
                                         <i class="fas fa-calendar-alt"></i>
@@ -50,9 +52,6 @@ const Events = () => {
                                         <p>{EventsData.time}</p>
                                     </div>
                                 </div>
-                            </div>
-                        <h3>{EventsData.description}</h3>
-
                         </div>
                         
                         
