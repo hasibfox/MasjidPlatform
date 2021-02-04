@@ -1,0 +1,41 @@
+.donate-container{
+    background: radial-gradient(white 0%, lightgray 100%);
+    padding: 15vh;
+    margin-bottom: 3vh;
+
+}
+.donate-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    transition: 1s;
+}
+.donate-content i{
+    margin-left: 10px;
+    transition: 1s;
+}
+.donate-content p{
+    transition: 1s;
+}
+.donate-content i:hover{
+    margin-left: 15px;
+}
+.donate-content Button{
+    display: flex;
+}
+.donate-content p:hover{
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 786px){
+    .donate-content{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .donate-content h2{
+        margin-top: 1.5vh;
+
+    }
+}

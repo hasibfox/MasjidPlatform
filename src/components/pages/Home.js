@@ -19,6 +19,7 @@ import {Button} from '../buttons-folder/Button';
 import Events from '../events-folder/Events';
 import Playlist from '../playlist-folder/Playlist';
 import Footer from '../footer-folder/Footer';
+import Donate from '../donate-folder/Donate';
 
 
 function Home() {
@@ -50,6 +51,20 @@ function Home() {
             {show5 ? <div  onClick={closeModalHandler5}className="modal-drop"></div> : null}
 
             <Navbar /> 
+            <div style={{
+                marginTop: '1vh'
+            }} className="test-button">
+                <Button buttonStyle="btn--edit" onClick={() => setShow(true)}><i class="far fa-edit"></i> Edit Slides Sections</Button>
+            </div>
+            <Modal1 slides={SliderData} show={show} close={closeModalHandler}/>
+            <ImageSlider slides={SliderData} /> 
+
+            <div 
+            className="test-button">
+                <Button buttonStyle="btn--edit" onClick={() => setShow2(true)}><i class="far fa-edit"></i>Edit Introduction Section</Button>
+            </div>
+            <Modal2 data={FrontData} show={show2} close={closeModalHandler2}/>
+            <Front/> <br/>
 
             <div style={{
                 marginTop: '1vh'
@@ -58,7 +73,31 @@ function Home() {
             </div>
             <Modal5 slides={FrontData} show={show5} close={closeModalHandler5}/>
             <Services />
-            
+
+            <div
+            style={{
+                marginTop: '-6vh'
+            }}
+            className="test-button">
+                <Button buttonStyle="btn--edit" onClick={() => setShow3(true)}><i class="far fa-edit"></i> Edit Events Section</Button>
+            </div>
+            <Modal3 slides={FrontData} show={show3} close={closeModalHandler3}/>
+            <Events />
+
+            <Donate/>
+
+
+            <div 
+            style={{
+                marginTop: '-2vh'
+            }}
+            className="test-button">
+                <Button buttonStyle="btn--edit" onClick={() => setShow4(true)}><i class="far fa-edit"> Edit Playlist Section</i></Button>
+            </div>
+            <Modal4 slides = {SliderData} show={show4} close={closeModalHandler4}/>
+            <Playlist/> 
+
+            <Footer / >     
 
             {/* 
         <div style={{

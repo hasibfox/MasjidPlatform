@@ -3,18 +3,20 @@
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 50px;
+
 
 }
 .services-container h1{
     width: 100%;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 .services-content{
 height: 200px;
 max-width: 320px;
 min-width: 100px;
-padding: 30px;
+padding: 10px;
 margin: 20px;
 overflow-wrap: break-word;
 display: flex;
@@ -25,7 +27,6 @@ transition: all 1s ease-in-out;
 }
 .fa-chalkboard-teacher{
     font-size: 50px;
-    margin-bottom: 10px;
 }
 .services-content p{
     margin-top: 10px;

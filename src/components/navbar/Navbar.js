@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 import './Navbar.css';
 import { Button } from '../buttons-folder/Button';
 import { Link, animateScroll as scroll } from "react-scroll";
+import {Link as Move} from 'react-router-dom';
 
 
 function Navbar() {
@@ -48,23 +49,19 @@ return (
                         > 
                         About Us </Link>
                     </li>
+                    
                     <li className="nav-item">
                         <Link
                             className="nav-links" 
                             onClick={closeMobileMenu}
                             activeClass="active"
-                            to="about-us"
+                            to="services"
                             spy={true}
                             smooth={true}
                             offset={-70}
                             duration={700}
                         > 
-                        Prayer Times </Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link to ="/services" className="nav-links" onClick={closeMobileMenu}>
-                            Services
-                        </Link>
+                        Services </Link>
                     </li>
                     <li className="nav-item">
                         <Link
@@ -84,7 +81,7 @@ return (
                             className="nav-links" 
                             onClick={closeMobileMenu}
                             activeClass="active"
-                            to="playlists"
+                            to="donate"
                             spy={true}
                             smooth={true}
                             offset={-70}
@@ -107,15 +104,21 @@ return (
                 </ul>
 
                 <div className='profile-dropdown'>
-                    <Link >
+                    <Move to='/actset'>
                         <Button buttonStyle='btn--primary'>{user} 
                         <i class="fa fa-caret-down"></i>
                         </Button>
-                    </Link>
+                    </Move>
                     <div class="dropdown-content">
-                        <a href="#">Edit Webpage</a>
-                        <a href="#">Account Settings</a>
-                        <a href="#">Frequently Asked Questions</a>
+                        <Move to='/actset'>
+                            Account Settings 
+                        </Move>
+                        <Move to='/masteredit'>
+                            Edit Webpage 
+                        </Move>
+                        <Move to='/faq'>
+                            Frequently Asked Questions
+                        </Move>
                         <a href="#">Sign Out</a>
 
                     </div>

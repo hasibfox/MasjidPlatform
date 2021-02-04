@@ -22,7 +22,6 @@ const Modal1 = ({show, close, slides}) => {
                     return(
                     <div className="modal-body">
                         <h4>{slide.number}</h4>
-                        <p></p>
                         <form className="modal-form" name="" method="" action="">
                             <input type="File" accept="image/*"></input>
                         </form>

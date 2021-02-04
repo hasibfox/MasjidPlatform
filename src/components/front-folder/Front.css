@@ -4,7 +4,7 @@
     height: 70vh;
     grid-template-columns: 2fr 1fr;
     overflow: hidden;
-    padding-bottom: 10vh;
+    padding-bottom: 5vh;
 }
 
 .front-left,.front-right{

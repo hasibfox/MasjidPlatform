@@ -59,6 +59,7 @@
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   margin-top: 45px;
+  cursor: pointer;
 }
 .fa-caret-down{
   margin-left: 10px;
@@ -79,7 +80,7 @@ Button:focus .dropdown-content{
   text-align: left;
 }
 .dropdown-content a:hover {
-  background-color: red;
+  background-color: rgb(155, 155, 155);
 }
 .nav-links {
   display: flex;
@@ -87,6 +88,7 @@ Button:focus .dropdown-content{
   text-decoration: none;
   height: 100%;
   color: black;
+  cursor: pointer;
 }
 
 .nav-links:hover {
@@ -111,19 +113,19 @@ Button:focus .dropdown-content{
 .nav-links:visited{
 color: black;
 }
-ul :nth-child(6), ul :nth-child(7){
+ul :nth-child(5), ul :nth-child(6){
  display: none 
 }
 @media screen and (max-width: 960px) {
   .NavbarItems {
     position: relative;
   }
-  ul :nth-child(6), ul :nth-child(7){
+  ul :nth-child(5), ul :nth-child(6){
     display: block; 
    }
-.profile-dropdown{
-  display: none;
-}
+  .profile-dropdown{
+    display: none;
+  }
   .nav-menu {
     display: flex;
     height: fit-content;
@@ -140,13 +142,17 @@ ul :nth-child(6), ul :nth-child(7){
   }
   .nav-menu.active {
     top: -30px;
-    height: 600px;
-    background: #30ca72;
+    height: 90vh;
+    background: whitesmoke;
     width: 100%;
     left: -20%;
     opacity: 1;
     transition: all 0.5s ease;
     z-index:100000;
+  }
+  .nav-links:hover{
+    border-top: 4px black solid;
+
   }
   .nav-item {
     height: 80px;

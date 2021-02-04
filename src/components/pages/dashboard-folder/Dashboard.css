@@ -1,0 +1,236 @@
+.dashboard-container{
+    padding: 15vh;
+    height: 70vh;
+    padding-right: 8vw;
+    animation: moveDown 1s ;
+
+}
+.settings-links h2{
+    margin-right: 5vw;
+    margin-top: 2vh;
+    transition: all .3s ease-in-out;
+}
+
+.settings-links{
+    display: flex;
+    text-decoration: none;
+    transition: 1s;
+}
+
+
+/*Account Settings Main Page*/
+
+
+.acc-content{
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+.active-page-text{
+    text-decoration: underline;
+    color: rgb(63, 63, 230);
+}
+.inactive-page-text:hover{
+    transition: .3s ease-in;
+    text-decoration: underline;
+    color: rgb(30, 83, 151);
+}
+.inactive-page-text{
+    color: black;
+}
+.acc-text{
+    margin-bottom: -2vh;
+    font-size: 20px;
+}
+.acc-content h3{
+    margin-bottom: 2vh;
+    font-size: 25px;
+    margin-top: 2vh;
+}
+.acc-content input{
+    padding: 10px;
+    width: 50%;
+    border-radius: 10px;
+}
+.acc-text,.acc-content input{
+    margin-left: 2vw;
+}
+.acc-content Button{
+    margin-top: 5vh;
+    margin-left: 20vw;
+    margin-bottom: 5vh;
+}
+@keyframes moveDown{
+    0%{
+        margin-top: -100px;
+        opacity: 0;
+    }
+    100%{
+        margin-top: 0px;
+        opacity: 1;
+    }
+}
+/* Master Edit Page*/
+
+/*Slides*/
+.one-slide{
+    background: burlywood;
+    padding: 20px;
+}
+.all-slides{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*Events*/
+.master-events-grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: .6fr 1fr .3fr .3fr .3fr;
+    background: white;
+}
+.mtitle-box,.mdescription-box,.mtime-flex1,.mtime-flex2,.mimg-upload{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    justify-items: center;
+    align-items: center;
+}
+.master-events-grid textarea{
+    resize: none;
+    width: 90%;
+    justify-self: left;
+    border-radius: 3px;
+}
+.mdescription-box textarea{
+    height: 10vh;
+}
+
+.mdescription-box{
+    grid-row: 2;
+}
+.mtime-flex1{
+    grid-row: 3;
+}
+.mtime-flex1 input,.mtime-flex2 input, .mimg-upload input{
+    justify-self: left;
+    margin-left: 0px;
+}
+.mtime-flex1 input,.mtime-flex2 input{
+    width: 25%;
+}
+.mtime-flex2{
+    grid-row: 4;
+}
+
+.mimg-upload{
+    grid-row: 5;
+}
+.mevents-image{
+    grid-row: 1/6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mevents-image p{
+    margin-bottom: 20px;
+}
+.mcurrent-image{
+    height: 200px;
+    width: auto;
+}
+
+/* Accordian FAQ*/
+
+.faq-container{
+    background: black;
+    margin-top: 5vh;
+    max-width: 80%;;
+}
+.faq-text{
+    background: firebrick;
+    height: 0;
+    opacity: 0;
+    display: flex;
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+}
+.show{
+    padding: 20px;
+    background: firebrick;
+    height: 20vh;
+    opacity: 1;
+    display: flex;
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+
+}
+.faq-header{
+    background: chartreuse;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.faq-header i{
+    font-size: 20px;
+}
+@media screen and (max-width:786px){
+    .show{
+        height: 50vh;
+    }
+    .settings-links h2{
+        font-size: 20px;
+    }
+    .mtime-flex1 input,.mtime-flex2 input{
+        width: 45%;
+    }
+    .mimg-upload input{
+        width: 100%;
+        padding-left: 0px;
+    }
+    .master-events-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: .6fr 1fr .3fr .3fr .3fr 2fr;
+    }   
+    .mevents-image{
+        grid-row: 6;
+    }
+    .mcurrent-image{
+        height: 100px;
+        width: auto;
+    }
+}
+@media screen and (max-width:540px){
+    .show{
+        height: 80vh;
+
+    }
+    .dashboard-container{
+        height: 100%;
+        padding: 3vh;
+        transition: 1s ease-in-out ;
+    }
+    .mtitle-box,.mdescription-box,.mtime-flex1,.mtime-flex2,.mimg-upload{
+        display: grid;
+        grid-template-columns: 40% 60%;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+        justify-items: center;
+        align-items: center;
+    }
+}
+
+
+
+
+
+
+
+
+

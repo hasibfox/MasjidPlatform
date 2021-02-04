@@ -9,7 +9,7 @@ const Modal5 = ({show, close}) => {
         style={{
             transform: show ? 'translateX(0vh)' : 'translateX(-250vh)',
             opacity: show ? '1' : '0',
-            transition: show ? '1s' : '1s',
+            transition: show ? '1s' : '1.5s',
             zIndex : show ? '100000' : '2000'
         }}
         >
