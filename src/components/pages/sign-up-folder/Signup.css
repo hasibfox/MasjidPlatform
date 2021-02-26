@@ -48,11 +48,10 @@ font-size: 30px;
 }
 .sign-form input{
   border-radius: 5px;
-  width: 90%;
-  padding: 5px;
+  width: 85%;
+  padding: 10px;
   margin: 10px;
-  border-color: lawngreen;
-  transition: ease-in-out;
+  transition: 1s ease-in-out;
 }
 
 .already-registered-button{
@@ -82,10 +81,28 @@ font-size: 30px;
   text-align: left;
   margin-left: 20px;
 }
-p .policy{
+.policy{
   font-size: 15px;
   text-align: center;
+  margin-top: 2vh;
 }
 .sign-form h3{
   cursor: pointer;
+}
+.login-form h2{
+  margin-bottom: 3vh;
+
+}
+.login-form h3{
+  text-align: left;
+  margin-left: 2vh;
+  font-size: 15px;
+  cursor: pointer;
+  margin-bottom: 1.9vh;
+}
+.login-form input{
+  border-radius: 5px;
+  width: 85%;
+  padding: 10px;
+  transition: 1s ease-in-out;
 }

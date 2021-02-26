@@ -119,7 +119,10 @@ return (
                         <Move to='/faq'>
                             Frequently Asked Questions
                         </Move>
-                        <a href="#">Sign Out</a>
+
+                        <Move to='/sign-up'>
+                            Sign Up
+                        </Move>
 
                     </div>
                 </div>

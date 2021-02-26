@@ -16,11 +16,8 @@ function Signin() {
         <div className="sign-container">
             <div className="signup-box">
 
-                <form>
-                    <h2 style={{
-                        marginTop: '-50px',
-                        marginBottom:'50px',
-                    }}>Log in with your existing account</h2>
+                <form className="login-form">
+                    <h2>Log in with your existing account</h2>
                     <input type="email" id="email" placeholder="Email"></input>
                     <h3 className="forgot">Forgot Username?</h3>
                     <input type="text" id="pswrd" placeholder="Password"></input>
